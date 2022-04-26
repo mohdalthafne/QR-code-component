@@ -1,0 +1,62 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --graysih-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    /* Font Size */
+    --font-paragraph: 15px;
+}
+
+body{
+    background: var(--light-gray);    
+    font-family: 'Outfit', sans-serif;
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 312px;
+    height: 502px;
+    padding: 30px;
+    border-radius: 5px;
+    background: var(--white);
+}
+.wrapper .qr-code img{
+    width: 100%;
+    border-radius: 6px;
+}
+.wrapper .text h2{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--dark-blue);
+}
+.wrapper .text p{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--graysih-blue);
+    font-weight: 400;
+    font-size: var(--font-paragraph);
+}
+.attribution{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+.attribution a{
+    text-decoration: none;
+}
